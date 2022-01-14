@@ -7,7 +7,7 @@ mf_returns = np.loadtxt("ngen_axis_scmf.csv", delimiter = ",", usecols = 1)
 mf_returns.mean()
 mf_returns.std()
 
-x = np.linspace(-15.0, 10.0, 1000)
+x = np.linspace(-7.0, 7.0, 1000)
 y = stats.norm.pdf(x, loc = mf_returns.mean(), scale = mf_returns.std())
 
 plt.figure(figsize = (20, 8))
